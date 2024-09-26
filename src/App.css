@@ -1,0 +1,198 @@
+* {
+  font-family: "Source Code Pro", monospace;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #1e1e1e;
+  color: #dcdcdc; 
+}
+
+h1 {
+  margin-top: 0;
+  color: #61dafb;
+  font-family: "Fira Code", monospace;
+}
+
+.container {
+  max-width: 600px;
+  margin: 32px auto;
+  background: #2d2d2d; 
+  padding: 16px 32px;
+  box-shadow: 0 4px 40px -8px rgba(0, 0, 0, 0.5);
+}
+
+.container form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.container form label {
+  background: #61dafb; 
+  color: #ffffff;
+  height: 40px;
+  width: 100px;
+  display: flex;
+  border-radius: 30px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.container form input[type="radio"]:checked + label {
+  background: #61dafb; 
+  color: #000000;
+  font-weight: bold;
+}
+
+.container .choices {
+  display: flex;
+  gap: 20px;
+}
+
+.container textarea {
+  padding: 16px;
+  font-size: 20px;
+  height: 140px;
+  resize: none;
+  line-height: 1.7;
+  border: 1px solid #007acc;
+  background: #1e1e1e; 
+  color: #dcdcdc; 
+}
+
+.container button {
+  padding: 8px;
+  font-size: 20px;
+  border: none;
+  background-color: #28a745; 
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.translation {
+  padding: 12px 32px;
+  background: #333333; 
+  margin-top: 20px;
+  font-size: 20px;
+  line-height: 1.7;
+  height: 300px;
+  overflow-y: scroll;
+  position: relative;
+}
+
+.translation .copy-btn {
+  position: absolute;
+  width: 20px;
+  top: 12px;
+  right: 12px;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.notification {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%, 100px);
+  background: #61dafb;
+  color: #000000;
+  padding: 12px 24px;
+  border-radius: 30px;
+  transition: all 400ms ease;
+}
+
+.notification.active {
+  transform: translate(-50%, -30px);
+}
+
+.error {
+  color: #ff3333; 
+}
+
+.language-select {
+  font-size: 18px;  
+  padding: 10px;    
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 100%;     
+  max-width: 400px; 
+  box-sizing: border-box;
+  margin-bottom: 15px; 
+}
+
+.language-label {
+  font-size: 16px; 
+  font-weight: bold;  
+  color: #333;  
+  padding: 10px 270px;  
+  display: inline-block; 
+  background-color: #007bff; 
+  border-radius: 20px; 
+  width: 200px; 
+  text-align: center; 
+}
+
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #61dafb; 
+  color: black; 
+}
+
+.rating-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.stars {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.star {
+  font-size: 2rem;
+  color: lightgray;
+}
+
+.star.filled {
+  color: gold;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
