@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Header = () => {
   return (
     <header style={styles.header}>
-      <h1 style={styles.title}>LingoMaster Translator</h1> {/* App Title displayed on page */}
+      <h1 style={styles.title}> Translator App</h1> {/* App Title displayed on page */}
       <nav style={styles.nav}>
         <ul>
           <li><Link to="/" style={styles.navLink}>Home</Link></li>
